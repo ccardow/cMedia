@@ -1,0 +1,15 @@
+$mainBlue: #2f5572;
+
+.test {
+    color: $mainBlue;
+    padding: 78px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    columns: 300px 2;
+}
+
+.box {
+   a {
+       display: block;
+       padding: 10px;
+   } 
+}
