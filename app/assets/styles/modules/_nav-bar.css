@@ -100,7 +100,6 @@
         }
     }
     &__tools {
-        position: absolute;
         display: inline-block;
         vertical-align: middle;
         top: 50%;
@@ -108,7 +107,7 @@
         text-transform: uppercase;
     }
     &__modules {
-        position: absolute;
+        ;
         display: inline-block;
         vertical-align: middle;
         top: 50%;
@@ -116,7 +115,6 @@
         text-transform: uppercase;
     }
     &__maps {
-        position: absolute;
         display: inline-block;
         vertical-align: middle;
         top: 50%;

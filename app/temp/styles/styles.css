@@ -592,7 +592,6 @@ a {
         }
 
 .nav-bar__tools {
-        position: absolute;
         display: inline-block;
         vertical-align: middle;
         top: 50%;
@@ -602,7 +601,7 @@ a {
     }
 
 .nav-bar__modules {
-        position: absolute;
+        ;
         display: inline-block;
         vertical-align: middle;
         top: 50%;
@@ -612,7 +611,6 @@ a {
     }
 
 .nav-bar__maps {
-        position: absolute;
         display: inline-block;
         vertical-align: middle;
         top: 50%;
@@ -717,6 +715,7 @@ a {
         position: absolute;
         top: calc(50% - 50px);
         cursor: pointer;
+        margin-left: -4px;
     }
 
 .left-active {
@@ -752,9 +751,16 @@ a {
         position: absolute;
         top: calc(50% - 50px);
         cursor: pointer;
+        margin-left: -4px;
     }
 
 .right-panel__icons-container {
+        position: absolute;
+        display: inline-block;
+        top: 0;
+        left: 50%;
+        text-align: center;
+        clear: both;
         width: 22.5rem;
         height: 2.5rem;
         background-image: -webkit-gradient( linear, left top, right top, from(#333333), to(#738A92));
@@ -762,8 +768,15 @@ a {
         /* background-color: pink;*/
     }
 
-.right-panel__title {
+.right-panel__icon-spacer {
         display: inline-block;
+        padding: 8px 8px 0 8px;
+    }
+
+.right-panel__title {
+        position: absolute;
+        top: 40px;
+        display: block;
         vertical-align: middle;
         white-space: nowrap;
         line-height: 3rem;
@@ -772,7 +785,6 @@ a {
         background-color: #ffffff;
         text-align: center;
         font-size: 1.6rem;
-        top: 50%;
     }
 
 .right-active {
@@ -784,7 +796,7 @@ a {
     bottom: 0px;
     background-color: #333;
     width: 100%;
-    height: 25rem;
+    height: 1rem;
     -webkit-transition: .5s;
     transition: .5s;
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .5);
@@ -799,7 +811,8 @@ a {
         margin-left: auto;
         width: 3.75rem;
         height: 1rem;
-        background-color: #333;
+        color: #9FB7BF;
+        background-color: #333333;
         border-radius: .5rem .5rem 0 0;
         margin-top: -15px;
         text-align: center;
@@ -842,7 +855,7 @@ a {
     }
 
 .bottom-active {
-    bottom: -24rem;
+    bottom: 24rem;
 }
 
 .btn {

@@ -21,6 +21,7 @@
         position: absolute;
         top: calc(50% - 50px);
         cursor: pointer;
+        margin-left: -4px;
     }
 }
 
