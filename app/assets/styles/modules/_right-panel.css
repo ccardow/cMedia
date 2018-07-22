@@ -22,6 +22,24 @@
         top: calc(50% - 50px);
         cursor: pointer;
     }
+    &__icons-container {
+        width: 22.5rem;
+        height: 2.5rem;
+        background-image: linear-gradient( to right, $mainDarkGrey, #738A92);
+        /* background-color: pink;*/
+    }
+    &__title {
+        display: inline-block;
+        vertical-align: middle;
+        white-space: nowrap;
+        line-height: 3rem;
+        width: 22.5rem;
+        height: 3rem;
+        background-color: #ffffff;
+        text-align: center;
+        font-size: 1.6rem;
+        top: 50%;
+    }
 }
 
 .right-active {
