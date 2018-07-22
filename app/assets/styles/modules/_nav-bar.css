@@ -1,0 +1,182 @@
+.nav-bar {
+    color: $mainBlue;
+    position: relative;
+    width: 100%;
+    height: 3.125rem;
+    background-color: $mainDarkGrey;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .5);
+    &__logo-container {
+        margin-left: 1.5rem;
+        width: 40px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+    &__company {
+        position: absolute;
+        top: 50%;
+        left: 5rem;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__menu-container-1 {
+        position: absolute;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+        top: 50%;
+        left: 27rem;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+        border-left: 1px solid $mainBlue;
+        height: 100%;
+        width: 6.75rem;
+        &:hover {
+            background-color: $mainBlue;
+            color: $offWhite;
+            cursor: pointer;
+        }
+    }
+    &__menu-container-2 {
+        position: absolute;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+        top: 50%;
+        left: 33.75rem;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+        border-left: 1px solid $mainBlue;
+        height: 100%;
+        width: 9rem;
+        &:hover {
+            background-color: $mainBlue;
+            color: $offWhite;
+            cursor: pointer;
+        }
+    }
+    &__menu-container-3 {
+        position: absolute;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+        top: 50%;
+        left: 42.7rem;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+        border-left: 1px solid $mainBlue;
+        height: 100%;
+        width: 10rem;
+        &:hover {
+            background-color: $mainBlue;
+            color: $offWhite;
+            cursor: pointer;
+        }
+    }
+    &__menu-container-4 {
+        position: absolute;
+        padding-left: 1rem;
+        padding-top: 1rem;
+        display: inline-block;
+        vertical-align: middle;
+        top: 50%;
+        left: 52.7rem;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+        border-left: 1px solid $mainBlue;
+        border-right: 1px solid $mainBlue;
+        height: 100%;
+        width: 6.25rem;
+        &:hover {
+            background-color: $mainBlue;
+            color: $offWhite;
+            cursor: pointer;
+        }
+    }
+    &__tools {
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+    }
+    &__modules {
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+    }
+    &__maps {
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        top: 50%;
+        transform: translateY(-50%);
+        text-transform: uppercase;
+    }
+    &__search-container {
+        position: absolute;
+        right: 0;
+        width: 18.5rem;
+        height: 100%;
+        border-left: 1px solid $mainBlue;
+    }
+    &__search {
+        display: block;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 1rem;
+        width: 15.8rem;
+        line-height: 1.875rem;
+        border: 1px solid $mainBlue;
+        border-radius: 6px;
+        padding-left: 8px;
+    }
+    &__search-icon {
+        display: inline;
+        border-radius: 0 6px 6px 0;
+        width: 2rem;
+        float: right;
+        max-height: 1.875rem;
+        background-color: $mainBlue;
+    }
+    &__search-img {
+        margin-top: 20%;
+        margin-left: 25%;
+        width: 20px;
+        height: 20px;
+    }
+    &__search-text {
+        font-style: italic;
+        opacity: .5;
+    }
+    &__user-container {
+        position: absolute;
+        padding-top: 1rem;
+        right: 29.8rem;
+        width: min-content;
+        color: $mainBlue;
+        border-left: 1px solid $mainBlue;
+        height: 100%;
+        padding-left: 8px;
+    }
+    &__user {
+        padding-left: 1.5rem;
+        position: absolute;
+        display: inline-block;
+        vertical-align: middle;
+        top: 50%;
+        transform: translateY(-50%);
+        white-space: nowrap;
+    }
+}

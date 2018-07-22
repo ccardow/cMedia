@@ -1,0 +1,29 @@
+.left-panel {
+    position: absolute;
+    top: 50px;
+    left: -24rem;
+    width: 25rem;
+    background-color: $mainDarkGrey;
+    height: calc(100vh - 50px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+    transition: .5s;
+    z-index: -100;
+    &__right {
+        position: relative;
+        width: 1rem;
+        float: right;
+        color: $mainBlue;
+        box-shadow: -4px 0 8px rgba(0, 0, 0, .5);
+        height: calc(100vh - 50px);
+        padding-right: 2px;
+    }
+    &__toggle {
+        position: absolute;
+        top: calc(50% - 50px);
+        cursor: pointer;
+    }
+}
+
+.left-active {
+    left: 0;
+}
