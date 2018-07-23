@@ -17,6 +17,24 @@
       $('.bottom-panel__toggle').click(function () {
         $('.bottom-panel').toggleClass('bottom-active');
       })
+      $('#right-panel__layers').click(function(){
+        $('#right-panel__title').text("LAYERS");
+    })
+    $('#right-panel__add_to_photos').click(function(){
+        $('#right-panel__title').text("ADD LAYERS");
+    })
+    $('#right-panel__map').click(function(){
+        $('#right-panel__title').text("BASEMAPS");
+    })
+    $('#right-panel__collections').click(function(){
+        $('#right-panel__title').text("SAVED DRAWINGS");
+    })
+    $('#right-panel__cloud_download').click(function(){
+        $('#right-panel__title').text("IMPORT DATA");
+    })
+    $('#right-panel__cloud_upload').click(function(){
+        $('#right-panel__title').text("EXPORT DATA");
+    })
     })
   </script>
   <title>WorXlog</title>
@@ -120,28 +138,28 @@
 
         <div class="right-panel__icons-container">
           <div class="right-panel__icon-spacer">
-            <i class="material-icons" id="layers">layers</i>
+            <i class="material-icons" id="right-panel__layers">layers</i>
           </div>
           <div class="right-panel__icon-spacer">
-            <i class="material-icons" id="add_to_photos">add_to_photos</i>
+            <i class="material-icons" id="right-panel__add_to_photos">add_to_photos</i>
           </div>
           <div class="right-panel__icon-spacer">
-            <i class="material-icons" id="map">map</i>
+            <i class="material-icons" id="right-panel__map">map</i>
           </div>
           <div class="right-panel__icon-spacer">
-            <i class="material-icons" id="collections">collections</i>
+            <i class="material-icons" id="right-panel__collections">collections</i>
           </div>
           <div class="right-panel__icon-spacer">
-            <i class="material-icons" id="cloud_download">cloud_download</i>
+            <i class="material-icons" id="right-panel__cloud_download">cloud_download</i>
           </div>
           <div class="right-panel__icon-spacer">
-            <i class="material-icons" id="cloud_upload">cloud_upload</i>
+            <i class="material-icons" id="right-panel__cloud_upload">cloud_upload</i>
           </div>
 
 
         </div>
       </div>
-      <div class="right-panel__title">
+      <div class="right-panel__title" id="right-panel__title">
         ACTIVE LAYERS
       </div>
     </div>

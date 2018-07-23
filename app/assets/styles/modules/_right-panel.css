@@ -43,7 +43,7 @@
         position: absolute;
         top: 40px;
         display: block;
-        vertical-align: middle;
+        text-transform: uppercase
         white-space: nowrap;
         line-height: 3rem;
         width: 22.5rem;
