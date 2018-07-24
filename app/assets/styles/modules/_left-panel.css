@@ -3,7 +3,7 @@
     top: 40px;
     left: -24rem;
     width: 25rem;
-    background-color: $mainDarkGrey;
+    background-image: linear-gradient(to bottom, #292929, #333 2%);
     height: calc(100vh - 50px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
     transition: .5s;

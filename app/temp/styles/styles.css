@@ -701,7 +701,8 @@ a {
     top: 40px;
     left: -24rem;
     width: 25rem;
-    background-color: #333333;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#292929), color-stop(2%, #333));
+    background-image: linear-gradient(to bottom, #292929, #333 2%);
     height: calc(100vh - 50px);
     -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
             box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
