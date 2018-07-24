@@ -5,37 +5,64 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,800" rel="stylesheet" type='text/css'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://js.arcgis.com/3.25/esri/css/esri.css">
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://js.arcgis.com/3.25/"></script>
   <script type="text/javascript">
     $(document).ready(function () {
+
+
+
       $('.left-panel__toggle').click(function () {
         $('.left-panel').toggleClass('left-active');
+      })
+      $('.left-panel__toggle').click(function () {
+        $('#map').toggleClass('map-active');
       })
       $('.right-panel__toggle').click(function () {
         $('.right-panel').toggleClass('right-active');
       })
+
+      $('.right-panel__title').hide();
+
+      $('.right-panel__toggle').click(function () {
+        $('.right-panel__title').toggle()
+      })
+
+
+
       $('.bottom-panel__toggle').click(function () {
         $('.bottom-panel').toggleClass('bottom-active');
       })
-      $('#right-panel__layers').click(function(){
+      $('#right-panel__layers').click(function () {
         $('#right-panel__title').text("LAYERS");
-    })
-    $('#right-panel__add_to_photos').click(function(){
+      })
+      $('#right-panel__add_to_photos').click(function () {
         $('#right-panel__title').text("ADD LAYERS");
-    })
-    $('#right-panel__map').click(function(){
+      })
+      $('#right-panel__map').click(function () {
         $('#right-panel__title').text("BASEMAPS");
-    })
-    $('#right-panel__collections').click(function(){
+      })
+      $('#right-panel__collections').click(function () {
         $('#right-panel__title').text("SAVED DRAWINGS");
-    })
-    $('#right-panel__cloud_download').click(function(){
+      })
+      $('#right-panel__cloud_download').click(function () {
         $('#right-panel__title').text("IMPORT DATA");
-    })
-    $('#right-panel__cloud_upload').click(function(){
+      })
+      $('#right-panel__cloud_upload').click(function () {
         $('#right-panel__title').text("EXPORT DATA");
+      })
+
     })
-    })
+
+    var map;
+    require(["esri/map", "dojo/domReady!"], function (Map) {
+      map = new Map("map", {
+        basemap: "topo",
+        center: [-122.45, 37.75],
+        zoom: 15
+      });
+    });
   </script>
   <title>WorXlog</title>
   <meta name="keywords" content="">
@@ -46,6 +73,9 @@
 </head>
 
 <body>
+
+
+  <div id="map" style="height: 100vh"></div>
 
   <!--TOP NAV BAR-->
   <div class="nav-bar">
@@ -111,9 +141,6 @@
 
 
       </div>
-
-
-
 
     </div>
 
@@ -181,6 +208,8 @@
     <div class="bottom-panel__content"></div>
 
   </div>
+
+
 
 
 </body>

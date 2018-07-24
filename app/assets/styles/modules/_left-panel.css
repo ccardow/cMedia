@@ -1,13 +1,13 @@
 .left-panel {
-    position: absolute;
-    top: 50px;
+    position: fixed;
+    top: 40px;
     left: -24rem;
     width: 25rem;
     background-color: $mainDarkGrey;
     height: calc(100vh - 50px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
     transition: .5s;
-    z-index: -100;
+    z-index: -1;
     &__right {
         position: relative;
         width: 1rem;
@@ -27,4 +27,14 @@
 
 .left-active {
     left: 0;
+}
+
+.map-active {
+    margin-left: 24rem;
+    transition: .5s;
+}
+
+.esriSimpleSliderTL {
+    top: 50px;
+    left: 20px;
 }
