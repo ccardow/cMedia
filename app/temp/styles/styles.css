@@ -460,7 +460,7 @@ html,
 }
 
 .esriControlsBR {
-    z-index: 1;
+    z-index: -1;
     bottom: 25px;
     right: 25px;
 }
