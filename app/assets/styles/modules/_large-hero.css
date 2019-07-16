@@ -1,6 +1,6 @@
 .large-hero {
   border-bottom: 20px solid $mainOrange;
-  border-top: 20px solid $mainOrange;
+
   position: relative;
 
   &__image {

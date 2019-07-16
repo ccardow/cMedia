@@ -5,9 +5,21 @@
   max-width: 77.25rem;
   margin-left: auto;
   margin-right: auto;
+
   &--medium {
     max-width: 61rem;
   }
+
+  &----no-padding-until-large {
+    padding-left: 0;
+    padding-right: 0;
+
+    @mixin atLarge {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+  }
+
   .wrapper {
     padding-left: 0;
     padding-right: 0;

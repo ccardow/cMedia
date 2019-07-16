@@ -5,8 +5,32 @@
     padding: 2rem 0;
   }
 
+  &--no-b-padding-until-medium {
+    padding-bottom: 0;
+    @mixin atMedium {
+      padding-bottom: 4.5rem;
+    }
+  }
+
+  &--no-b-padding-until-large {
+    padding-bottom: 0;
+    @mixin atLarge {
+      padding-bottom: 4.5rem;
+    }
+  }
+
   &--blue {
-    background-color: $mainBlue;
+    background: linear-gradient(
+      90deg,
+      rgba(41, 48, 59, 1) 15%,
+      rgba(60, 47, 38, 1) 50%,
+      rgba(41, 48, 59, 1) 85%
+    );
     color: #fff;
+  }
+
+  &--testimonials {
+    /* background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+    background-size: cover; */
   }
 }
