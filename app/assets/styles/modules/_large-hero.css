@@ -22,8 +22,12 @@
     font-size: 2.4rem;
     margin: 0;
 
+    @mixin atMedium {
+      font-size: 3rem;
+    }
+
     @mixin atSmall {
-      font-size: 4rem;
+      font-size: 2.5rem;
     }
   }
   &__subtitle {
@@ -34,7 +38,7 @@
     margin: 0px;
 
     @mixin atSmall {
-      font-size: 2.9rem;
+      font-size: 2rem;
     }
   }
 
@@ -48,7 +52,7 @@
     margin-right: auto;
 
     @mixin atSmall {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
       padding: 0 20px;
     }
   }
