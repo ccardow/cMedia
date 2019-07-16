@@ -21,7 +21,14 @@
   &--orange-sq {
     background-color: $mainOrange;
     &:hover {
-      background-color: #eb9052c2;
+      background-color: $mainOrange;
+    }
+  }
+
+  &--orange-sq {
+    background-color: $mainPurple;
+    &:hover {
+      background-color: #e101f9;
     }
   }
 

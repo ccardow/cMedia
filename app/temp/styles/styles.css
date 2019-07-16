@@ -577,7 +577,15 @@ a {
   }
 
 .btn--orange-sq:hover {
-      background-color: #eb9052c2;
+      background-color: #eb9052;
+    }
+
+.btn--orange-sq {
+    background-color: #7a05df;
+  }
+
+.btn--orange-sq:hover {
+      background-color: #e101f9;
     }
 
 .btn--large {
@@ -1046,7 +1054,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #29303b;
+  background-color: #333;
   color: white;
   padding: 0.5rem 0;
   text-align: center;
@@ -1066,3 +1074,6 @@ a {
       margin-right: 1.4rem
   }
   }
+
+.header {
+}
