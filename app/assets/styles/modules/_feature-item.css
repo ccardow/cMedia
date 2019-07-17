@@ -19,13 +19,13 @@
   &__title {
     font-size: 1.6rem;
     font-weight: 300;
-    color: $mainOrange;
+    color: #d5dc4a;
     margin-top: 1em;
     margin-bottom: 0.8rem;
     text-align: center;
 
     &:hover {
-      color: #46759e;
+      color: #7a05df;
     }
 
     @mixin atSmall {
