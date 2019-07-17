@@ -1,1 +1,9 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><style>.cls-1{fill:#eb9052;}</style></defs><title>comment</title><path class="cls-1" d="M0.72,0.08A0.67,0.67,0,0,0,0,.8V47.28A0.72,0.72,0,0,0,.72,48H48L64,64V0.72A0.67,0.67,0,0,0,63.28,0H0.8Z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.049" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#eb0de3"/>
+      <stop offset="1" stop-color="#360370"/>
+    </linearGradient>
+  </defs>
+  <path id="Union_1" data-name="Union 1" d="M21.338,101H20A20,20,0,0,1,0,81V20A20,20,0,0,1,20,0h88a20,20,0,0,1,20,20V81a20,20,0,0,1-20,20H41c-2.214,6.315,2,27,2,27S24.112,109.452,21.338,101Z" fill="url(#linear-gradient)"/>
+</svg>

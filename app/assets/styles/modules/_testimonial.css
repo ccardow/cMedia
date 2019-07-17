@@ -5,8 +5,14 @@
   margin-top: 4rem;
   margin-bottom: 80px;
 
-  @mixin atLarge {
+  @mixin atSmall {
     margin-bottom: 0;
+    min-width: 100%;
+    margin-top: 7rem;
+  }
+
+  @mixin atMedium {
+    min-width: 100%;
   }
 
   &--last {
@@ -39,11 +45,7 @@
   }
 
   &__gradient-1 {
-    background: linear-gradient(
-      135deg,
-      rgba(248, 0, 255, 1) 0%,
-      rgba(44, 8, 203, 1) 100%
-    );
+    background: linear-gradient(135deg, #f800ff 0%, rgba(44, 8, 203, 1) 100%);
   }
 
   &__gradient-2 {

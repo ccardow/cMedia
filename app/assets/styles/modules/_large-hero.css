@@ -1,6 +1,5 @@
 .large-hero {
-  border-bottom: 20px solid $mainOrange;
-
+  border-bottom: 20px solid #d5dc4a;
   position: relative;
 
   &__image {
@@ -9,15 +8,19 @@
 
   &__text-content {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 0;
     width: 100%;
     text-align: center;
     transform: translateY(-50%);
+
+    @mixin atMedium {
+      top: 55%;
+    }
   }
   &__title {
     font-weight: 600;
-    color: $mainOrange;
+    color: #d5dc4a;
 
     font-size: 2.4rem;
     margin: 0;
@@ -48,6 +51,7 @@
     font-weight: 100;
     text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.2);
     max-width: 34rem;
+    margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
 
