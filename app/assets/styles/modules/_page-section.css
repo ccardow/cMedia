@@ -20,12 +20,7 @@
   }
 
   &--blue {
-    background: linear-gradient(
-      90deg,
-      rgba(41, 48, 59, 1) 15%,
-      rgba(60, 47, 38, 1) 50%,
-      rgba(41, 48, 59, 1) 85%
-    );
+    background-color: $mainPurple;
     color: #fff;
   }
 

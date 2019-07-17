@@ -8,6 +8,7 @@
 
   &:hover {
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+    background-color: #d5dc4a;
   }
 
   &--orange-rd {
@@ -29,6 +30,13 @@
     background-color: $mainPurple;
     &:hover {
       background-color: #e101f9;
+    }
+  }
+
+  &--hero-sq {
+    background-color: $mainBlue;
+    &:hover {
+      background-color: rgba(213, 220, 74, 0.7);
     }
   }
 

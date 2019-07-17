@@ -4,15 +4,11 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
   margin-top: 4rem;
   margin-bottom: 80px;
+  min-width: 100%;
 
   @mixin atSmall {
     margin-bottom: 0;
-    min-width: 100%;
     margin-top: 7rem;
-  }
-
-  @mixin atMedium {
-    min-width: 100%;
   }
 
   &--last {

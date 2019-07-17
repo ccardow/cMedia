@@ -1,9 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 128 128">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="191" height="122.314" viewBox="0 0 191 122.314">
   <defs>
-    <linearGradient id="linear-gradient" y1="0.049" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#eb0de3"/>
-      <stop offset="1" stop-color="#360370"/>
-    </linearGradient>
+    <filter id="Union_1" x="0" y="0" width="191" height="122.314" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
   </defs>
-  <path id="Union_1" data-name="Union 1" d="M21.338,101H20A20,20,0,0,1,0,81V20A20,20,0,0,1,20,0h88a20,20,0,0,1,20,20V81a20,20,0,0,1-20,20H41c-2.214,6.315,2,27,2,27S24.112,109.452,21.338,101Z" fill="url(#linear-gradient)"/>
+  <g id="Group_1" data-name="Group 1" transform="translate(-96.08 -155.242)">
+    <g id="Group_2" data-name="Group 2">
+      <g transform="matrix(1, 0, 0, 1, 96.08, 155.24)" filter="url(#Union_1)">
+        <path id="Union_1-2" data-name="Union 1" d="M5.423,79.3A19.93,19.93,0,0,1,0,65.6V20A20,20,0,0,1,20,0H153a20,20,0,0,1,20,20V65.6a20,20,0,0,1-20,20H28.589c-.609,7.756,8.377,18.712,8.377,18.712S9.467,83.943,5.423,79.3Z" transform="translate(9 6)" fill="#d5dc4a"/>
+      </g>
+    </g>
+  </g>
 </svg>
