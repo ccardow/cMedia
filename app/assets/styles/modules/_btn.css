@@ -21,10 +21,10 @@
 
   &--nav {
     margin-top: 8px;
-    background-color: #d5dc4a;
+    background-color: $mainGreen;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
     &:hover {
-      background-color: #d5dc4a96;
+      background-color: $mainPurple;
     }
   }
 
@@ -36,9 +36,9 @@
   }
 
   &--orange-sq {
-    background-color: $mainPurple;
+    background-color: $mainGreen;
     &:hover {
-      background-color: #e101f9;
+      background-color: $mainPurple;
     }
   }
 

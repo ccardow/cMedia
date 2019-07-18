@@ -38,13 +38,13 @@
           <nav class="primary-nav primary-nav--pull-right">
             <ul>
               <li>
-                <a href="#skills">My Skills</a>
+                <a href="#skills" id="skills-link">My Skills</a>
               </li>
               <li>
-                <a href="#features">What I Do</a>
+                <a href="#features" id="features-link">What I Do</a>
               </li>
               <li>
-                <a href="#testimonials">Testimonials</a>
+                <a href="#testimonials" id="testimonials-link">Testimonials</a>
               </li>
             </ul>
           </nav>
@@ -103,7 +103,7 @@
       </div>
     </div>
 
-    <div id="skills" class="page-section">
+    <div id="skills" class="page-section" data-matching-link="#skills-link">
       <div class="wrapper ">
         <div class="skills">
           <h2 class="section-title">Skills &<strong> Abilities</strong></h2>
@@ -153,7 +153,11 @@
       </div>
     </div>
 
-    <div id="features" class="page-section page-section--blue">
+    <div
+      id="features"
+      class="page-section page-section--blue"
+      data-matching-link="#features-link"
+    >
       <div class="wrapper">
         <h2 class="section-title headline--no-t-margin ">
           What <strong>I Do</strong>
@@ -164,7 +168,7 @@
             <div class="feature-item">
               <img
                 class="feature-item__icon"
-                src="assets/images/icons/rain.svg"
+                src="assets/images/icons/xd-icon.svg"
               />
               <h3 class="feature-item__title">UI/UX Design</h3>
               <p>
@@ -180,11 +184,11 @@
             <div class="feature-item">
               <img
                 class="feature-item__icon"
-                src="assets/images/icons/globe.svg"
+                src="assets/images/icons/html5.svg"
               />
               <h3 class="feature-item__title">Website Design</h3>
               <p>
-                Whether in WordPress, using JavaScript front-end libaries,
+                Whether in WordPress, using JavaScript front-end libraries,
                 frameworks, or building from scratch with basic HTML5, flex and
                 CSS, I have experience and the creative flair to produce
                 beautiful websites.
@@ -195,13 +199,13 @@
             <div class="feature-item">
               <img
                 class="feature-item__icon"
-                src="assets/images/icons/wifi.svg"
+                src="assets/images/icons/css-3.svg"
               />
               <h3 class="feature-item__title">HTML/CSS JavaScript</h3>
               <p>
                 The knowledge of HTML5, CSS and JavaScript are the essential
-                ingredients to being a good UI/UX practioner. Understanding
-                grids, box-sixing, global resets as well as the myriad of best
+                ingredients to being a good UI/UX practitioner. Understanding
+                grids, box-sizing, global resets as well as the myriad of best
                 practices is what sets great UI/UX designers apart from the rest
                 of the pack.
               </p>
@@ -210,7 +214,7 @@
             <div class="feature-item">
               <img
                 class="feature-item__icon"
-                src="assets/images/icons/fire.svg"
+                src="assets/images/icons/React-icon.svg"
               />
               <h3 class="feature-item__title">Front-End Development</h3>
               <p>
@@ -231,6 +235,7 @@
     <div
       id="testimonials"
       class=" testimonials page-section page-section--no-b-padding-until-large page-section--testimonials"
+      data-matching-link="#testimonials-link"
     >
       <div class="wrapper wrapper--no-padding-until-large">
         <h2 class="section-title section-title--blue">

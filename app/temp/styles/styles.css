@@ -488,7 +488,7 @@ a {
             transform: translateY(-50%);
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .large-hero__text-content {
       top: 55%
@@ -503,7 +503,7 @@ a {
     margin: 0;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .large-hero__title {
       font-size: 3rem
@@ -588,7 +588,7 @@ a {
   }
 
 .btn--nav:hover {
-      background-color: #d5dc4a96;
+      background-color: #7a05df;
     }
 
 .btn--orange-sq {
@@ -600,11 +600,11 @@ a {
     }
 
 .btn--orange-sq {
-    background-color: #7a05df;
+    background-color: #d5dc4a;
   }
 
 .btn--orange-sq:hover {
-      background-color: #e101f9;
+      background-color: #7a05df;
     }
 
 .btn--hero-sq {
@@ -660,7 +660,7 @@ a {
     margin-bottom: 1.5rem;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .wrapper--b-margin {
       margin-bottom: 3.875rem
@@ -671,7 +671,7 @@ a {
   padding: 2rem 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .page-section {
     padding: 2rem 0
@@ -682,7 +682,7 @@ a {
     padding-bottom: 0;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .page-section--no-b-padding-until-medium {
       padding-bottom: 4.5rem
@@ -795,7 +795,7 @@ a {
     margin-bottom: 1.6rem;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
     .row__b-margin-until-medium {
       margin-bottom: 0;
     }
@@ -821,7 +821,7 @@ a {
     }
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .row--equal-height-at-medium {
       display: -webkit-box;
@@ -879,7 +879,7 @@ a {
     }
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .row--equal-height-at-medium {
       display: -webkit-box;
@@ -987,10 +987,6 @@ a {
     text-align: center;
   }
 
-.feature-item__title:hover {
-      color: #7a05df;
-    }
-
 @media (min-width: 320px) {
 
 .feature-item__title {
@@ -1084,7 +1080,7 @@ a {
     font-weight: 200;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .site-footer__text {
       display: inline;
@@ -1095,7 +1091,7 @@ a {
 
 .header {
   /* position absolute or fixed takes it out of the flow */
-  position: fixed;
+  position: absolute;
   z-index: 2;
   width: 100%;
   padding: 10px 0;
@@ -1108,20 +1104,25 @@ a {
     background-color: rgba(41,48,59, 0.9);
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .header {
-    background-color: rgba(41,48,59, 0.85);
+    position: fixed;
+    background-color: rgba(41,48,59, 0.64);
     padding: 0;
     height: 60px
 }
+
+    .header--dark {
+      background-color: rgba(41,48,59, 0.9);
+    }
   }
 
 .header__btn-container {
     display: none;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .header__btn-container {
       float: right;
@@ -1175,7 +1176,7 @@ a {
       transition: all 0.3s ease-out;
     }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .header__menu-icon {
       display: none
@@ -1208,24 +1209,35 @@ a {
 
 .header__logo--is-visible {
       opacity: 1;
-      -webkit-transform: scale(0.8);
-              transform: scale(0.8);
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
       z-index: 1;
       top: 2rem;
       -webkit-transform: translateX(50%);
               transform: translateX(50%);
     }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .header__logo {
       left: auto;
-      top: 1rem;
-      -webkit-transform: translateX(0) scale(1);
-              transform: translateX(0) scale(1);
+      top: 2px;
+      -webkit-transform: translateX(0) scale(0.8);
+              transform: translateX(0) scale(0.8);
+      -webkit-transition: -webkit-transform 0.4s ease-out;
+      transition: -webkit-transform 0.4s ease-out;
+      transition: transform 0.4s ease-out;
+      transition: transform 0.4s ease-out, -webkit-transform 0.4s ease-out;
       display: block;
-      opacity: 0.8
+      opacity: 0.8;
+      -webkit-transform-origin: 0 0;
+              transform-origin: 0 0
   }
+
+      .header--dark .header__logo {
+        -webkit-transform: scale(0.64);
+                transform: scale(0.64);
+      }
   }
 
 .header__menu-content {
@@ -1240,7 +1252,7 @@ a {
     padding-top: 100px;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .header__menu-content {
       opacity: 1;
@@ -1262,14 +1274,14 @@ a {
   padding-top: 16px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .primary-nav {
     padding-top: 8px
 }
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .primary-nav--pull-right {
       float: right
@@ -1294,7 +1306,7 @@ a {
     font-size: 0.8rem;
   }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .primary-nav li {
       padding-right: 1rem;
@@ -1304,51 +1316,55 @@ a {
   }
   }
 
-.primary-nav li:last-child {
-    padding-right: 0;
+li:last-child {
+  padding-right: 0;
+}
+
+@media (min-width: 800px) {
+
+li:last-child {
+    padding-right: 1rem
+}
   }
 
-@media (min-width: 768px) {
+a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.6rem 0.4rem;
+  margin-top: 20px;
+  background-color: rgba(41,48,59, 0.4);
+}
 
-.primary-nav li:last-child {
-      padding-right: 1rem
-  }
-  }
-
-.primary-nav a {
-    color: white;
-    text-decoration: none;
-    display: block;
-    padding: 0.6rem 0.4rem;
-    margin-top: 20px;
-    background-color: rgba(41,48,59, 0.4);
+a:hover {
+    background-color: #d5dc4a;
   }
 
-.primary-nav a:hover {
-      background-color: #d5dc4a;
+@media (min-width: 800px) {
+
+a {
+    padding: 12px;
+    margin: 0;
+    background-color: transparent
+}
+
+    a.is-current-link {
+      border-bottom: 1px solid #d5dc4a;
     }
 
-@media (min-width: 768px) {
-
-.primary-nav a {
-      padding: 12px;
-      margin: 0;
-      background-color: transparent
-  }
-
-      .primary-nav a:hover {
+      a.is-current-link:hover {
         background-color: rgba(41,48,59, 0.1);
       }
   }
 
 .skills {
-  margin-top: -2.5rem;
+  margin: -2.5rem 1rem 1rem 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .skills {
-    margin-top: 1rem
+    margin: -2rem 3rem 1rem 3rem
 }
   }
 
@@ -1371,7 +1387,7 @@ a {
           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 800px) {
 
 .skillBarValue {
     color: white
