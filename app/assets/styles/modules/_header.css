@@ -12,7 +12,7 @@
   }
 
   @mixin atMedium {
-    background-color: rgba($mainBlue, 0.4);
+    background-color: rgba($mainBlue, 0.85);
     padding: 0;
     height: 60px;
   }

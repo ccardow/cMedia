@@ -703,6 +703,8 @@ a {
 .page-section--blue {
     background-color: #29303b;
     color: #fff;
+    border-top: 20px solid #d5dc4a;
+    border-bottom: 20px solid #d5dc4a;
   }
 
 .page-section--testimonials {
@@ -1066,6 +1068,7 @@ a {
   }
 
 .site-footer {
+  border-top: 20px solid #d5dc4a;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1108,7 +1111,7 @@ a {
 @media (min-width: 768px) {
 
 .header {
-    background-color: rgba(41,48,59, 0.4);
+    background-color: rgba(41,48,59, 0.85);
     padding: 0;
     height: 60px
 }
@@ -1458,12 +1461,16 @@ a {
 
 .reveal-item {
   opacity: 0;
-  -webkit-transition: opacity 1.5s ease-out;
-  transition: opacity 1.5s ease-out;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
 }
 
 .reveal-item--is-visible {
     opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 
 .skillBarValue {
