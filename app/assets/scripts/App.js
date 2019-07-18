@@ -1,6 +1,5 @@
 import MobileMenu from "./modules/MobileMenu";
-import SkillsBar from "./modules/SkillsBar";
+import RevealOnScroll from "./modules/RevealOnScroll";
 
 const mobileMenu = new MobileMenu();
-
-const skillsBar = new SkillsBar();
+const revealOnScroll = new RevealOnScroll();
