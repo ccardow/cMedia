@@ -1,0 +1,13 @@
+.skills {
+  &__progress-value {
+    color: #fff;
+    border-radius: 20px 3px;
+    text-align: right;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, #d5dc4a 0%, #98a9f5 100%);
+    transition-timing-function: ease-in-out;
+    font-size: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 1rem;
+  }
+}

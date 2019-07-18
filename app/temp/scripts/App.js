@@ -74,9 +74,15 @@ var _MobileMenu = __webpack_require__(1);
 
 var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
+var _SkillsBar = __webpack_require__(3);
+
+var _SkillsBar2 = _interopRequireDefault(_SkillsBar);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var mobileMenu = new _MobileMenu2.default();
+
+var skillsBar = new _SkillsBar2.default();
 
 /***/ }),
 /* 1 */
@@ -10389,6 +10395,102 @@ if ( !noGlobal ) {
 return jQuery;
 } );
 
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var elem = document.getElementById("html");
+var width1 = 1;
+var id = setInterval(frame, 20);
+function frame() {
+  if (width1 >= 75) {
+    clearInterval(id);
+  } else {
+    width1++;
+    elem.style.width = width1 + "%";
+  }
+}
+
+var elem2 = document.getElementById("css");
+var width2 = 1;
+var id2 = setInterval(frame2, 20);
+function frame2() {
+  if (width2 >= 80) {
+    clearInterval(id2);
+  } else {
+    width2++;
+    elem2.style.width = width2 + "%";
+  }
+}
+
+var elem3 = document.getElementById("ux");
+var width3 = 1;
+var id3 = setInterval(frame3, 20);
+function frame3() {
+  if (width3 >= 100) {
+    clearInterval(id3);
+  } else {
+    width3++;
+    elem3.style.width = width3 + "%";
+  }
+}
+
+var elem4 = document.getElementById("js");
+var width4 = 1;
+var id4 = setInterval(frame4, 20);
+function frame4() {
+  if (width4 >= 45) {
+    clearInterval(id4);
+  } else {
+    width4++;
+    elem4.style.width = width4 + "%";
+  }
+}
+
+var elem5 = document.getElementById("react");
+var width5 = 1;
+var id5 = setInterval(frame5, 20);
+function frame5() {
+  if (width5 >= 40) {
+    clearInterval(id5);
+  } else {
+    width5++;
+    elem5.style.width = width5 + "%";
+  }
+}
+
+var elem6 = document.getElementById("wordpress");
+var width6 = 1;
+var id6 = setInterval(frame6, 20);
+function frame6() {
+  if (width6 >= 75) {
+    clearInterval(id6);
+  } else {
+    width6++;
+    elem6.style.width = width6 + "%";
+  }
+}
+
+var elem7 = document.getElementById("jquery");
+var width7 = 1;
+var id7 = setInterval(frame7, 20);
+function frame7() {
+  if (width7 >= 40) {
+    clearInterval(id7);
+  } else {
+    width7++;
+    elem7.style.width = width7 + "%";
+  }
+}
+
+exports.default = SkillsBar;
 
 /***/ })
 /******/ ]);
