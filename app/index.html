@@ -7,7 +7,7 @@
       rel="stylesheet"
       type="text/css"
     />
-    <title>Your Vision</title>
+    <title>cMEDIA Group</title>
     <meta
       name="keywords"
       content="web development, web design, creative services and more"
@@ -32,7 +32,7 @@
           <div class="header__menu-icon__middle"></div>
         </div>
         <div class="header__menu-content">
-          <a href="#" class="btn btn--nav header__btn-container"
+          <a href="#" class="btn btn--nav header__btn-container open-modal"
             >Get in Touch</a
           >
           <nav class="primary-nav primary-nav--pull-right">
@@ -97,7 +97,9 @@
             your story to the world.
           </p>
           <p>
-            <a href="#" class="btn btn--hero-sq">Get Started Today</a>
+            <a href="#" class="btn btn--hero-sq open-modal"
+              >Get Started Today</a
+            >
           </p>
         </div>
       </div>
@@ -325,10 +327,54 @@
           <span class="site-footer__text"
             >Copyright &copy; 2019 Cameron Cardow. All rights reserved.</span
           >
-          <a href="#" class="btn btn--orange-sq">Get in Touch</a>
+          <a href="#" class="btn btn--orange-sq open-modal">Get in Touch</a>
         </p>
       </div>
     </footer>
+
+    <div class="modal">
+      <div class="modal-wrapper">
+        <h2 class="section-title section-title--less-margin modal-title ">
+          <img class="modal--icon" src="assets/images/icons/mail.svg" />
+          <strong>Contact Me</strong>
+        </h2>
+        <div class="wrapper wrapper--narrow">
+          <p class="modal__description">
+            I am available for new UI/UX positions, front-end design, web design
+            either full-time, or contracted.
+          </p>
+          <div class="modal--contact">
+            <a
+              href="https://1drv.ms/b/s!AnQiCvkHkNy4jJkjx88GEdpO4SdTdQ?e=jY6GHJ"
+              download
+              target="blank"
+              class="btn btn--orange-sq modal-btn-m"
+              >Resume</a
+            >
+            <a
+              href="https://1drv.ms/v/s!AnQiCvkHkNy4jJkevCcMJ-VoVcGVAw?e=T7GiIr"
+              target="blank"
+              class="btn btn--orange-sq modal-btn-m"
+              >Video</a
+            >
+            <a
+              href="mailto:ccardow@gmail.com"
+              class="btn btn--orange-sq modal-btn-m"
+              >Email</a
+            >
+
+            <a
+              href="https://www.linkedin.com/in/cam-cardow-a736494/"
+              target="blank"
+              class="btn btn--orange-sq modal-btn-m"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+        <div class="close-x">X</div>
+      </div>
+    </div>
+
     <script src="/temp/scripts/App.js"></script>
   </body>
 </html>

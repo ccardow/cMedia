@@ -1,5 +1,7 @@
 .skills {
-  margin: -2.5rem 1rem 1rem 1rem;
+  position: relative;
+  overflow: hidden;
+  margin: -2.5rem 0 1rem 0;
 
   @mixin atMedium {
     margin: -2rem 3rem 1rem 3rem;
@@ -7,7 +9,6 @@
 }
 
 .skillBarContainer {
-  width: 100%;
   padding: 1rem;
   margin: 3rem 1rem;
   border-radius: 5px;
